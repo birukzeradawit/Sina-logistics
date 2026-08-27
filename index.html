@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SINA Supplies and Logistics — Your Goods, Our Priority</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;900&family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/overview.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo">
+      <img class="logo-mark" src="assets/logo-icon.png" alt="SINA Supplies and Logistics" width="44" height="25">
+      <div>
+        <div class="logo-text">SINA</div>
+        <div class="logo-sub">Supplies &amp; Logistics</div>
+      </div>
+    </a>
+
+    <div class="nav-links" id="nav-links">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="about.html">About</a>
+      <a href="sectors.html">Sectors</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="nav-cta">
+      <a class="btn btn-primary" href="contact.html">Request a Quote</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow reveal">Ethiopian Multi-Sector Trade &amp; Logistics Group</div>
+      <h1 class="reveal">Your goods,<br>on the <span class="accent">move.</span></h1>
+      <p class="lead reveal">SINA moves cargo, materials, and commerce across Ethiopia and beyond — freight, trade, construction, energy, and agriculture, coordinated as one integrated operation.</p>
+      <div class="hero-actions reveal">
+        <a class="btn btn-primary" href="contact.html">Request a Quote</a>
+        <a class="btn btn-ghost" href="sectors.html">View Sectors →</a>
+      </div>
+    </div>
+
+    <div class="route-panel reveal">
+      <svg viewBox="0 0 400 400" role="img" aria-label="Animated trade route diagram">
+        <path class="route-line" d="M60 320 C120 280, 140 200, 200 200 C260 200, 280 120, 340 80" />
+        <path class="route-line hot" d="M60 320 C120 280, 140 200, 200 200 C260 200, 280 120, 340 80" />
+        <circle class="node origin" cx="60" cy="320" r="5"/>
+        <text class="node-label" x="72" y="324">ADDIS ABABA</text>
+
+        <circle class="node" cx="200" cy="200" r="4"/>
+        <text class="node-label" x="210" y="196">HUB</text>
+
+        <circle class="node" cx="340" cy="80" r="4"/>
+        <text class="node-label" x="300" y="66">EXPORT</text>
+
+        <path class="route-line" d="M60 320 C40 250, 90 180, 60 110" opacity="0.25"/>
+        <circle class="node" cx="60" cy="110" r="3.5" opacity="0.55"/>
+        <text class="node-label" x="72" y="114" opacity="0.55">IMPORT</text>
+      </svg>
+    </div>
+  </div>
+
+  <div class="board">
+    <div class="board-inner">
+      <div class="board-label">Manifest&nbsp;/&nbsp;Active</div>
+      <div class="board-track" id="board-track"></div>
+    </div>
+  </div>
+</section>
+
+<section class="overview">
+  <div class="diag-block amber"></div>
+  <div class="diag-block gold"></div>
+  <div class="wrap overview-grid">
+    <div class="overview-copy reveal">
+      <div class="eyebrow">Company Profile</div>
+      <h2>A diversified Ethiopian business group, built on trade.</h2>
+      <p>SINA Supplies and Logistics PLC is a diversified Ethiopian private company engaged in import and export trade, logistics, consulting, construction, real estate, agriculture, energy, tourism, manufacturing, and mining. Our integrated business model delivers complete solutions to government institutions, private organizations, and individual customers throughout Ethiopia and international markets.</p>
+      <a class="btn btn-ghost-dark" href="about.html">Read Full Profile →</a>
+    </div>
+    <div class="diamond-frame reveal">
+      <img src="assets/port-sunset.png" alt="Container port at sunset">
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <a href="index.html" class="logo">
+        <img class="logo-mark" src="assets/logo-icon.png" alt="SINA Supplies and Logistics" width="44" height="25">
+        <div>
+          <div class="logo-text" style="color:var(--paper);">SINA</div>
+          <div class="logo-sub" style="color:#8b8a85;">Your Goods, Our Priority</div>
+        </div>
+      </a>
+      <div class="foot-cols">
+        <div class="foot-col">
+          <h5>Sectors</h5>
+          <a href="sectors.html">Logistics</a>
+          <a href="sectors.html">Trade</a>
+          <a href="sectors.html">Construction</a>
+          <a href="sectors.html">Agriculture</a>
+        </div>
+        <div class="foot-col">
+          <h5>Company</h5>
+          <a href="about.html">About Us</a>
+          <a href="about.html#why">Why SINA</a>
+          <a href="about.html#csr">CSR</a>
+        </div>
+        <div class="foot-col">
+          <h5>Contact</h5>
+          <a href="mailto:sinasupplies@outlook.com">Email Us</a>
+          <a href="contact.html">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 SINA Supplies and Logistics PLC</span>
+      <span>ADDIS ABABA · ETHIOPIA</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

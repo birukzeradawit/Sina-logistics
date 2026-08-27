@@ -64,6 +64,8 @@ h1,h2,h3{ font-family:var(--display); font-weight:900; letter-spacing:-0.01em; l
 .btn-primary:hover{ background:var(--amber); color:var(--ink); }
 .btn-ghost{ border-color:var(--line); color:var(--ink); }
 .btn-ghost:hover{ border-color:var(--ink); }
+.btn-ghost-dark{ border-color:var(--line-dark); color:var(--paper); }
+.btn-ghost-dark:hover{ border-color:var(--gold); color:var(--gold); }
 
 section{ padding:110px 0; }
 .section-head{
