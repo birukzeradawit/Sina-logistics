@@ -66,6 +66,8 @@ footer{ background:var(--ink); color:var(--paper); padding:60px 0 30px; }
   display:flex; justify-content:space-between; padding-top:24px; font-family:var(--mono); font-size:11px; color:var(--slate);
   flex-wrap:wrap; gap:10px;
 }
+.foot-bottom a{ color:#B9B7B0; }
+.foot-bottom a:hover{ color:var(--gold); }
 
 /* ===== PAGE HERO — shared by inner pages (About, Sectors, Contact) ===== */
 .page-hero{

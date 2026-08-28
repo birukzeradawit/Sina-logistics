@@ -126,3 +126,26 @@
   100%{ transform:translateX(-50%); }
 }
 
+
+/* ===== CAPABILITIES STRIP ===== */
+.cap-strip{
+  background:var(--ink);
+  color:var(--paper);
+  padding:90px 0;
+}
+.cap-strip .eyebrow{ color:var(--gold); margin-bottom:16px; }
+.cap-strip .eyebrow::before{ background:var(--gold); }
+.cap-strip-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
+  align-items:center;
+}
+.cap-strip h2{ font-size:clamp(28px,3.4vw,44px); }
+.cap-strip p{
+  color:#C7C5BE;
+  font-size:15px;
+  line-height:1.75;
+  margin-bottom:26px;
+}
+@media(max-width:900px){ .cap-strip-grid{ grid-template-columns:1fr; gap:28px; } }
