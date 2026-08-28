@@ -1,7 +1,7 @@
-# SINA Supplies and Logistics Website
+# SINA Trading Website
 
 ## Project Overview
-A professional, modern website for SINA Supplies and Logistics PLC, an Ethiopian multi-sector business group engaged in logistics, trade, construction, energy, agriculture, manufacturing, tourism, consulting, and integrated business services.
+A professional, modern website for SINA Trading PLC, an Ethiopian company specializing in procurement, logistics, event management, property management, staffing, and integrated business support services.
 
 ## Website Structure
 
@@ -28,7 +28,7 @@ A professional, modern website for SINA Supplies and Logistics PLC, an Ethiopian
 
 ### Pages & Content
 - **Homepage**: Animated hero, company overview, statistics, sectors grid
-- **About Page**: Company profile, core values, "Why SINA" section, CSR
+- **About Page**: Company profile, core values, "Why SINA Trading" section, CSR
 - **Sectors Page**: All 9 sectors with detailed service information
 - **Contact Page**: Contact form, business hours, location info, quick quote
 
@@ -74,7 +74,7 @@ SINA/
 ├── assets/
 │   ├── logo-icon.png
 │   ├── port-sunset.png
-│   └── SINA Supplies & Logistics PLC Logo.png
+│   └── SINA Trading PLC Logo.png
 ├── css/
 │   ├── base.css
 │   ├── layout.css
