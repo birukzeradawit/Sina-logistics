@@ -30,6 +30,69 @@
   .intro-grid{ grid-template-columns:1fr; gap:34px; }
 }
 
+/* ===== VISION & MISSION ===== */
+.vision-mission{ padding:100px 0; background:var(--ink); color:var(--paper); }
+.vm-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:1px;
+  background:var(--line-dark);
+  border:1px solid var(--line-dark);
+}
+.vm-card{ background:var(--ink); padding:44px 40px; }
+.vm-card .eyebrow{ color:var(--gold); margin-bottom:18px; }
+.vm-card .eyebrow::before{ background:var(--gold); }
+.vm-card h2{
+  font-size:clamp(24px,2.6vw,32px);
+  text-transform:none;
+  letter-spacing:0;
+  margin-bottom:18px;
+}
+.vm-card p{ color:#C7C5BE; font-size:15px; line-height:1.75; }
+.vm-card ul{ list-style:none; }
+.vm-card li{
+  color:#C7C5BE;
+  font-size:14.5px;
+  line-height:1.6;
+  padding:12px 0 12px 22px;
+  border-bottom:1px solid var(--line-dark);
+  position:relative;
+}
+.vm-card li:last-child{ border-bottom:none; }
+.vm-card li::before{
+  content:"→";
+  position:absolute; left:0; top:12px;
+  color:var(--amber);
+}
+@media(max-width:900px){ .vm-grid{ grid-template-columns:1fr; } .vm-card{ padding:34px 26px; } }
+
+/* ===== METHODOLOGY ===== */
+.methodology{ padding:100px 0; }
+.phase-grid{
+  display:grid;
+  grid-template-columns:repeat(5, 1fr);
+  gap:26px;
+}
+.phase{ border-top:2px solid var(--line); padding-top:20px; }
+.phase:hover{ border-top-color:var(--amber); }
+.phase-num{
+  font-family:var(--mono);
+  font-size:11px;
+  letter-spacing:0.08em;
+  color:var(--rust);
+  margin-bottom:12px;
+}
+.phase h3{
+  font-size:17px;
+  text-transform:none;
+  letter-spacing:0;
+  font-weight:700;
+  margin-bottom:8px;
+}
+.phase p{ font-size:13.5px; color:var(--slate); line-height:1.6; }
+@media(max-width:1000px){ .phase-grid{ grid-template-columns:repeat(2,1fr); gap:30px; } }
+@media(max-width:560px){ .phase-grid{ grid-template-columns:1fr; } }
+
 /* ===== MISSION & VALUES ===== */
 .mission-values{ padding:100px 0; background:var(--paper-dim); }
 .values-grid{
@@ -97,8 +160,22 @@
 @media(max-width:900px){ .why-grid{ grid-template-columns:1fr 1fr; } }
 @media(max-width:560px){ .why-grid{ grid-template-columns:1fr; } }
 
-/* ===== CSR ===== */
+/* ===== STRATEGIC FOCUS ===== */
 .csr{ padding:100px 0; background:var(--ink); color:var(--paper); scroll-margin-top:90px; }
+.benefit-list{ list-style:none; margin-bottom:26px; }
+.benefit-list li{
+  color:#C7C5BE;
+  font-size:14.5px;
+  line-height:1.6;
+  padding:11px 0 11px 22px;
+  border-bottom:1px solid var(--line-dark);
+  position:relative;
+}
+.benefit-list li::before{
+  content:"→";
+  position:absolute; left:0; top:11px;
+  color:var(--gold);
+}
 .csr .eyebrow{ color:var(--gold); }
 .csr .eyebrow::before{ background:var(--gold); }
 .csr-grid{

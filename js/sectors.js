@@ -1,6 +1,6 @@
-// Highlights the matching pill in the sticky sub-nav as each sector block
+// Highlights the matching pill in the sticky sub-nav as each section block
 // scrolls into view — like a manifest entry lighting up as it's scanned.
-const sectorBlocks = document.querySelectorAll('.sector-block');
+const sectorBlocks = document.querySelectorAll('.sector-block, .cap-group');
 const navItems = document.querySelectorAll('.nav-item');
 
 if (sectorBlocks.length && navItems.length) {

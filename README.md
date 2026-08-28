@@ -1,122 +1,51 @@
-# SINA Supplies and Logistics Website
+# SINA Trading — Company Website
 
-## Project Overview
-A professional, modern website for SINA Supplies and Logistics PLC, an Ethiopian multi-sector business group engaged in logistics, trade, construction, energy, agriculture, manufacturing, tourism, consulting, and integrated business services.
+Marketing website for **SINA Supplies and Logistics PLC**, an Ethiopian provider of procurement, logistics,
+event, property, and staffing services, trading online as **SINA Trading** (www.sinatrading.et).
 
-## Website Structure
+Static site — plain HTML, CSS, and vanilla JavaScript. No build step.
 
-### Pages
-- **index.html** - Homepage with hero section, company overview, stats, and sectors preview
-- **about.html** - Company profile, mission, values, and CSR information
-- **sectors.html** - Detailed information about all 9 business sectors
-- **contact.html** - Contact form and company contact information
+## Brand naming
+- Registered name: SINA Supplies and Logistics PLC (used in the footer, About page, and legal copy)
+- Web brand / domain: SINA Trading — www.sinatrading.et (used in page titles and meta)
 
-### Assets
-- **assets/** - Images, logos, and media files
-- **css/** - Stylesheets for all pages and components
-- **js/** - JavaScript functionality and animations
+## Pages
+- **index.html** — hero, company overview, stats, the five core services, capabilities teaser
+- **about.html** — who we are, vision, mission, working methodology, values, why clients choose SINA, strategic focus and client benefits
+- **sectors.html** — the five core service lines in detail (procurement, logistics, events, property, staffing)
+- **capabilities.html** — the company's full registered scope, 27 business lines grouped into six categories
+- **contact.html** — contact details, company profile download, and quote request form
 
-## Features Implemented
+Content on every page is sourced from the SINA company profile deck and the "Our Services" scope document.
 
-### Design & UX
-- Modern, professional design with amber/gold accent colors
-- Responsive layout for all screen sizes
-- Smooth animations and transitions
-- Enhanced hover effects and interactive elements
-- Sticky navigation with backdrop blur
-- Mobile-optimized hamburger menu with animations
-
-### Pages & Content
-- **Homepage**: Animated hero, company overview, statistics, sectors grid
-- **About Page**: Company profile, core values, "Why SINA" section, CSR
-- **Sectors Page**: All 9 sectors with detailed service information
-- **Contact Page**: Contact form, business hours, location info, quick quote
-
-### Technical Features
-- Smooth scroll navigation
-- Page transition animations
-- Back-to-top button
-- Image lazy loading
-- Form validation and submission handling
-- Intersection Observer for scroll animations
-- CSS Grid and Flexbox layouts
-- CSS custom properties for theming
-- Accessibility considerations (reduced motion support)
-
-## Color Scheme
-- Primary: `#111112` (ink)
-- Background: `#F7F5F1` (paper)
-- Accent: `#E8940C` (amber)
-- Secondary: `#FFCB47` (gold)
-- Text: `#5B5B58` (slate)
-
-## Typography
-- Display: 'Big Shoulders Display'
-- Body: 'Space Grotesk'
-- Mono: 'IBM Plex Mono'
-
-## Development Progress
-✅ All core pages completed
-✅ Responsive design implemented
-✅ Animations and interactions added
-✅ Mobile menu enhanced
-✅ Contact form with validation
-✅ Smooth scroll and page transitions
-✅ Final testing complete
-
-## File Structure
+## Structure
 ```
-SINA/
-├── index.html
-├── about.html
-├── sectors.html
-├── contact.html
-├── assets/
-│   ├── logo-icon.png
-│   ├── port-sunset.png
-│   └── SINA Supplies & Logistics PLC Logo.png
-├── css/
-│   ├── base.css
-│   ├── layout.css
-│   ├── home.css
-│   ├── about.css
-│   ├── sectors.css
-│   ├── contact.css
-│   ├── overview.css
-│   ├── sectors-preview.css
-│   └── stats.css
-└── js/
-    ├── main.js
-    ├── animations.js
-    ├── home.js
-    ├── about.js
-    ├── sectors.js
-    └── contact.js
+index.html, about.html, sectors.html, capabilities.html, contact.html
+assets/   logos, photography, company profile PDF
+css/      base.css, layout.css + one stylesheet per page/section
+js/       main.js (nav), animations.js (scroll reveals), plus per-page scripts
 ```
 
-## Browser Support
-- Modern browsers (Chrome, Firefox, Safari, Edge)
-- Mobile responsive design
-- Touch-friendly interactions
+`css/base.css` holds the design tokens (colors, fonts, spacing) and `css/layout.css` the shared header,
+footer, and page hero. Stylesheet links carry a `?v=` cache-busting query — bump it when a file changes.
 
-## Performance Optimizations
-- Lazy loading for images
-- CSS animations using transforms
-- Optimized JavaScript with event delegation
-- Minimal external dependencies (Google Fonts only)
+## Design system
+- Ink `#111112` · Paper `#F7F5F1` · Amber `#E8940C` · Gold `#FFCB47` · Slate `#5B5B58`
+- Display: Big Shoulders Display · Body: Space Grotesk · Mono: IBM Plex Mono
+- Responsive down to mobile, with a hamburger nav below 900px and reduced-motion support
 
-## Future Enhancements
-- Google Maps integration for contact page
-- Email backend for contact form
-- Multi-language support
-- Additional sector case studies
-- Testimonials section
-- News/blog section
+## Running locally
+```bash
+python3 -m http.server 8000
+# then open http://localhost:8000
+```
 
-## Contact Information
-- Email: sinasupplies@outlook.com
-- Location: Addis Ababa, Ethiopia
-- Business Hours: Mon-Fri 8AM-6PM, Sat 9AM-2PM
+## Known gaps
+- The contact form is client-side only; it needs an email backend or a service such as Formspree
+- No Google Maps embed on the contact page
+- English only; no Amharic version
+- Photography is generic — real company photos would replace `assets/port-sunset.png` and `port-crane-bw.png`
 
----
-*Built with modern web technologies and best practices for optimal user experience.*
+## Contact
+- sinasupplies@outlook.com · +251 90-969-6932
+- Lemi Kura Sub-city, W 03, Addis Ababa, Ethiopia

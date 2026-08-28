@@ -1,5 +1,6 @@
 /* ===== SECTORS SUB-NAV ===== */
 .sectors-nav{
+  padding:0;
   position:sticky;
   top:71px; /* sits right below the main header */
   z-index:50;

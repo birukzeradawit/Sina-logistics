@@ -46,6 +46,9 @@ h1,h2,h3{ font-family:var(--display); font-weight:900; letter-spacing:-0.01em; l
   display:inline-block;
 }
 
+.inline-link{ color:var(--rust); border-bottom:1px solid rgba(185,110,0,0.4); }
+.inline-link:hover{ border-bottom-color:var(--rust); }
+
 .btn{
   font-family:var(--mono);
   font-size:13px;
