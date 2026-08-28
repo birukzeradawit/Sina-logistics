@@ -132,3 +132,25 @@
 .page-hero.hero-photo h1{ color:var(--paper); }
 .page-hero.hero-photo .lead{ color:#C7C5BE; }
 .page-hero.hero-photo h1 .accent{ color:var(--amber); }
+
+.trade-grid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:18px;
+  margin-top:8px;
+}
+.trade-card{
+  border:1px solid var(--line);
+  padding:26px 24px;
+  background:var(--paper);
+}
+.trade-card h3{
+  font-size:18px;
+  text-transform:none;
+  letter-spacing:0;
+  font-weight:700;
+  margin-bottom:10px;
+}
+.trade-card p{ font-size:13.5px; color:var(--slate); line-height:1.65; }
+@media(max-width:900px){ .trade-grid{ grid-template-columns:1fr 1fr; } }
+@media(max-width:560px){ .trade-grid{ grid-template-columns:1fr; } }
