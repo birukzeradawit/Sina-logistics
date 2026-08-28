@@ -3,7 +3,15 @@
   position:relative;
   padding:90px 0 0;
   overflow:hidden;
+  background:
+    linear-gradient(180deg, rgba(17,17,18,0.88), rgba(17,17,18,0.94)),
+    url("../assets/boardroom-bw.png") center 30% / cover no-repeat;
+  color:var(--paper);
 }
+.hero .eyebrow{ color:var(--gold); }
+.hero .eyebrow::before{ background:var(--gold); }
+.hero h1{ color:var(--paper); }
+.hero p.lead{ color:#C7C5BE; }
 .hero-grid{
   display:grid;
   grid-template-columns:1.15fr 0.85fr;
@@ -39,10 +47,10 @@
 .route-panel svg{ width:100%; height:100%; }
 .route-line{
   fill:none;
-  stroke:var(--ink);
+  stroke:var(--paper);
   stroke-width:1.4;
   stroke-dasharray:6 6;
-  opacity:0.35;
+  opacity:0.3;
 }
 .route-line.hot{
   stroke:var(--amber);
@@ -57,13 +65,14 @@
   55%{ stroke-dashoffset:0; }
   100%{ stroke-dashoffset:-1000; }
 }
-.node{ fill:var(--ink); }
+.node{ fill:var(--paper); }
 .node.origin{ fill:var(--amber); }
 .node-label{
   font-family:var(--mono);
   font-size:9px;
-  fill:var(--ink);
+  fill:var(--paper);
   letter-spacing:0.04em;
+  opacity:0.85;
 }
 
 @media(max-width:900px){
@@ -116,7 +125,4 @@
   0%{ transform:translateX(0); }
   100%{ transform:translateX(-50%); }
 }
-@media (prefers-reduced-motion:reduce){
-  .board-track{ animation:none; }
-  .route-line.hot{ animation:none; stroke-dashoffset:0; }
-}
+

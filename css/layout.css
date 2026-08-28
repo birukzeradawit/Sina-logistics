@@ -10,8 +10,8 @@ nav{
   display:flex; align-items:center; justify-content:space-between;
 }
 .logo{ display:flex; align-items:center; gap:14px; }
-.logo-mark{ width:58px; height:auto; flex-shrink:0; }
-.logo-text{ font-family:var(--display); font-weight:900; font-size:24px; line-height:1; letter-spacing:0.01em; }
+.logo-mark{ width:72px; height:auto; flex-shrink:0; }
+.logo-text{ font-family:var(--display); font-weight:900; font-size:26px; line-height:1; letter-spacing:0.01em; }
 .logo-sub{ font-family:var(--mono); font-size:9px; letter-spacing:0.12em; color:var(--slate); text-transform:uppercase; margin-top:2px; }
 
 .nav-links{ display:flex; gap:34px; font-size:14px; font-weight:500; }
@@ -65,4 +65,22 @@ footer{ background:var(--ink); color:var(--paper); padding:60px 0 30px; }
 .foot-bottom{
   display:flex; justify-content:space-between; padding-top:24px; font-family:var(--mono); font-size:11px; color:var(--slate);
   flex-wrap:wrap; gap:10px;
+}
+
+/* ===== PAGE HERO — shared by inner pages (About, Sectors, Contact) ===== */
+.page-hero{
+  padding:90px 0 70px;
+  border-bottom:1px solid var(--line);
+}
+.page-hero h1{
+  font-size:clamp(38px, 5.4vw, 68px);
+  margin:16px 0 20px;
+}
+.page-hero h1 .accent,
+h1 .accent{ color:var(--amber); }
+.page-hero .lead{
+  font-size:16px;
+  color:var(--slate);
+  max-width:560px;
+  line-height:1.65;
 }
